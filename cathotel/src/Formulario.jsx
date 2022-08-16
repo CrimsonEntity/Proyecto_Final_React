@@ -23,7 +23,8 @@ function Formulario ({nombre}) {
                 <input type="date" name="salida" id="salida" />
                 <label htmlFor="">Dieta: </label>
                 <textarea type="text" name="dieta" id="dieta" rows="4" cols="30">Dieta o Alimentos o medicinas</textarea>
-                <button>Guardar</button>
+                <input className="rounded border-2 text-sm font-semibold bg-violet-50 text-violet-700
+      hover:bg-violet-100" type="submit" value="Guardar"/>
             </form>
         </div>
     )
