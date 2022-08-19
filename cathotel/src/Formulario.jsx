@@ -40,11 +40,15 @@ export default function Formulario ({huespedes,setHuespedes}) {
 
     return (
         <div>
-            <h2>Ingreso de datos de huesped</h2>
-            <p>Ingrese los datos indicados para generar la reservación.</p>
-            <form className="container w-40 flex-col" onSubmit={agregarHuesped}>
-                <label htmlFor="">Nombre del Dueño: </label>
-                <input className="rounded border-2 text-sm font-semibold bg-violet-50 text-violet-700 hover:bg-violet-100" 
+            <div className="bg-zinc-100 shadow-lg rounded text-center mx-3 my-7 px-3 py-5">
+                <h2 className="text-center text-teal-700 font-bold">Ingreso de datos de huesped</h2>
+                <p className="mt-4 text-center text-teal-600 font-bold">Ingrese los datos indicados para generar la reservación.</p>
+            </div>
+
+            <div className="container mx-3 my-7 px-3 py-5 bg-zinc-100 shadow-lg rounded text-base drop-shadow-lg">
+            <form className="container mt-4 ml-3 flex-col" onSubmit={agregarHuesped}>
+                <label className="flex flex-col text-teal-700 font-semibold">Nombre del Dueño: </label>
+                <input className="rounded border-2 border-teal-600 text-sm font-semibold bg-teal-100 text-teal-600 hover:bg-cyan-100" 
                     value={dueño} 
                     onChange={(e)=>{setDueño(e.target.value)}}
                     type="text" 
@@ -53,8 +57,8 @@ export default function Formulario ({huespedes,setHuespedes}) {
                     placeholder="Nombre del dueño" 
                 />
 
-                <label htmlFor="">Nombre de la mascota: </label>
-                <input 
+                <label className="flex flex-col text-teal-700 font-semibold">Nombre de la mascota: </label>
+                <input className="rounded border-2 border-teal-600 text-sm font-semibold bg-teal-100 text-teal-600 hover:bg-cyan-100" 
                     value={mascota} 
                     onChange={(e)=>{setMascota(e.target.value)}}
                     type="text" 
@@ -63,8 +67,8 @@ export default function Formulario ({huespedes,setHuespedes}) {
                     placeholder="Nombre de la mascota"
                 />
 
-                <label htmlFor="">Animal: </label>
-                <input 
+                <label className="flex flex-col text-teal-700 font-semibold">Animal: </label>
+                <input className="rounded border-2 border-teal-600 text-sm font-semibold bg-teal-100 text-teal-600 hover:bg-cyan-100" 
                     value={animal} 
                     onChange={(e)=>{setAnimal(e.target.value)}}
                     type="text" 
@@ -73,8 +77,8 @@ export default function Formulario ({huespedes,setHuespedes}) {
                     placeholder="Gato/Perro/Conejo,etc" 
                 />
 
-                <label htmlFor="">Email: </label>
-                <input 
+                <label className="flex flex-col text-teal-700 font-semibold">Email: </label>
+                <input className="rounded border-2 border-teal-600 text-sm font-semibold bg-teal-100 text-teal-600 hover:bg-cyan-100" 
                     value={email} 
                     onChange={(e)=>{setEmail(e.target.value)}}
                     type="email" 
@@ -83,8 +87,8 @@ export default function Formulario ({huespedes,setHuespedes}) {
                     placeholder="catshotel@relax.com"
                 />
 
-                <label htmlFor="">Telefono: </label>
-                <input 
+                <label className="flex flex-col text-teal-700 font-semibold">Telefono: </label>
+                <input className="rounded border-2 border-teal-600 text-sm font-semibold bg-teal-100 text-teal-600 hover:bg-cyan-100" 
                     value={tel} 
                     onChange={(e)=>{setTel(e.target.value)}}
                     type="tel" 
@@ -93,8 +97,8 @@ export default function Formulario ({huespedes,setHuespedes}) {
                     placeholder="xx-xx-xx-xx"
                 />
 
-                <label htmlFor="">Fecha de Ingreso: </label>
-                <input 
+                <label className="flex flex-col text-teal-700 font-semibold">Fecha de Ingreso: </label>
+                <input className="rounded border-2 border-teal-600 text-sm font-semibold bg-teal-100 text-teal-600 hover:bg-cyan-100" 
                     value={entrada} 
                     onChange={(e)=>{setEntrada(e.target.value)}}
                     type="date" 
@@ -102,8 +106,8 @@ export default function Formulario ({huespedes,setHuespedes}) {
                     id="entrada"
                 />
 
-                <label htmlFor="">Fecha de Salida: </label>
-                <input 
+                <label className="flex flex-col text-teal-700 font-semibold">Fecha de Salida: </label>
+                <input className="rounded border-2 border-teal-600 text-sm font-semibold bg-teal-100 text-teal-600 hover:bg-cyan-100" 
                     value={salida} 
                     onChange={(e)=>{setSalida(e.target.value)}}
                     type="date" 
@@ -111,7 +115,7 @@ export default function Formulario ({huespedes,setHuespedes}) {
                     id="salida" 
                 />
 
-                <label htmlFor="">Dieta: </label>
+                <label className="flex flex-col text-teal-700 font-semibold">Dieta: </label>
                 <textarea 
                     value={dieta} 
                     onChange={(e)=>{setDieta(e.target.value)}}
@@ -122,11 +126,12 @@ export default function Formulario ({huespedes,setHuespedes}) {
                     cols="30"
                 >Dieta o Alimentos o medicinas</textarea>
 
-                <input className="rounded border-2 text-sm font-semibold bg-violet-50 text-violet-700 hover:bg-violet-100" 
+                <input className="rounded border-2 text-sm font-semibold bg-violet-50 text-violet-700 hover:bg-violet-100 flex flex-col" 
                     type="submit" 
                     value="Guardar Datos"
                 />
             </form>
+            </div>
         </div>
     )
 }
