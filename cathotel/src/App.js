@@ -8,9 +8,11 @@ import Encabezado from "./Encabezado";
 function App() {
 
   const [huespedes,setHuespedes]=useState([])
+  
+
 
   return (
-    <div className="bg-yellow-800/25"> 
+    <div className="bg-slate-200"> 
       <Encabezado/>
       <div className='container mx-auto mt-5 md:flex'>
 
@@ -20,7 +22,8 @@ function App() {
         />
 
         <VisorDeHuespedes className='md:-1/2 lg:w-3/5 md:h-screen overflow-y-scroll'
-        huespedes={huespedes}/>
+        huespedes={huespedes}
+        />
 
       </div>
     </div>

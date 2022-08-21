@@ -2,10 +2,11 @@ import React from "react";
 import Huesped from "./Huesped";
 
 
-function VisorDeHuespedes ({huespedes}) {
+function VisorDeHuespedes ({huespedes }) {
+
     return (
         <div className="ml-4">
-            <h2 className="container mx-5 my-10 h-24 bg-orange-300/50 shadow-lg rounded text-center text-teal-700 font-bold>">Lista de Huespedes</h2>
+            <h2 className="container mx-5 mt-6 mb-7 h-24 bg-sky-100 shadow-2xl rounded text-center text-teal-700 font-bold text-2xl">Lista de Huespedes</h2>
             {
                 huespedes.map((huesped)=>{
                     return <Huesped
