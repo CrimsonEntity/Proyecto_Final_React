@@ -40,15 +40,15 @@ export default function Formulario ({huespedes,setHuespedes}) {
 
     return (
         <div>
-            <div className="bg-zinc-100 shadow-lg rounded text-center mx-3 my-7 px-3 py-5">
+            <div className="bg-orange-300/50 shadow-lg rounded text-center mx-3 my-7 px-3 py-5">
                 <h2 className="text-center text-teal-700 font-bold">Ingreso de datos de huesped</h2>
                 <p className="mt-4 text-center text-teal-600 font-bold">Ingrese los datos indicados para generar la reservación.</p>
             </div>
 
-            <div className="container mx-3 my-7 px-3 py-5 bg-zinc-100 shadow-lg rounded text-base drop-shadow-lg">
-            <form className="container mt-4 ml-3 flex-col" onSubmit={agregarHuesped}>
+            <div className="container mx-3 my-5 px-3 py-5 bg-orange-200/75 shadow-lg rounded text-base drop-shadow-lg">
+            <form className="container mt-2 ml-3 flex-col" onSubmit={agregarHuesped}>
                 <label className="flex flex-col text-teal-700 font-semibold">Nombre del Dueño: </label>
-                <input className="rounded border-2 border-teal-600 text-sm font-semibold bg-teal-100 text-teal-600 hover:bg-cyan-100" 
+                <input className="rounded border-2 border-teal-600 text-sm font-semibold bg-amber-50 text-teal-600 hover:bg-yellow-100" 
                     value={dueño} 
                     onChange={(e)=>{setDueño(e.target.value)}}
                     type="text" 
@@ -58,7 +58,7 @@ export default function Formulario ({huespedes,setHuespedes}) {
                 />
 
                 <label className="flex flex-col text-teal-700 font-semibold">Nombre de la mascota: </label>
-                <input className="rounded border-2 border-teal-600 text-sm font-semibold bg-teal-100 text-teal-600 hover:bg-cyan-100" 
+                <input className="rounded border-2 border-teal-600 text-sm font-semibold bg-amber-50 text-teal-600 hover:bg-yellow-100" 
                     value={mascota} 
                     onChange={(e)=>{setMascota(e.target.value)}}
                     type="text" 
@@ -68,7 +68,7 @@ export default function Formulario ({huespedes,setHuespedes}) {
                 />
 
                 <label className="flex flex-col text-teal-700 font-semibold">Animal: </label>
-                <input className="rounded border-2 border-teal-600 text-sm font-semibold bg-teal-100 text-teal-600 hover:bg-cyan-100" 
+                <input className="rounded border-2 border-teal-600 text-sm font-semibold bg-amber-50 text-teal-600 hover:bg-yellow-100" 
                     value={animal} 
                     onChange={(e)=>{setAnimal(e.target.value)}}
                     type="text" 
@@ -78,7 +78,7 @@ export default function Formulario ({huespedes,setHuespedes}) {
                 />
 
                 <label className="flex flex-col text-teal-700 font-semibold">Email: </label>
-                <input className="rounded border-2 border-teal-600 text-sm font-semibold bg-teal-100 text-teal-600 hover:bg-cyan-100" 
+                <input className="rounded border-2 border-teal-600 text-sm font-semibold bg-amber-50 text-teal-600 hover:bg-yellow-100" 
                     value={email} 
                     onChange={(e)=>{setEmail(e.target.value)}}
                     type="email" 
@@ -88,7 +88,7 @@ export default function Formulario ({huespedes,setHuespedes}) {
                 />
 
                 <label className="flex flex-col text-teal-700 font-semibold">Telefono: </label>
-                <input className="rounded border-2 border-teal-600 text-sm font-semibold bg-teal-100 text-teal-600 hover:bg-cyan-100" 
+                <input className="rounded border-2 border-teal-600 text-sm font-semibold bg-amber-50 text-teal-600 hover:bg-yellow-100" 
                     value={tel} 
                     onChange={(e)=>{setTel(e.target.value)}}
                     type="tel" 
@@ -98,7 +98,7 @@ export default function Formulario ({huespedes,setHuespedes}) {
                 />
 
                 <label className="flex flex-col text-teal-700 font-semibold">Fecha de Ingreso: </label>
-                <input className="rounded border-2 border-teal-600 text-sm font-semibold bg-teal-100 text-teal-600 hover:bg-cyan-100" 
+                <input className="rounded border-2 border-teal-600 text-sm font-semibold bg-amber-50 text-teal-600 hover:bg-yellow-100" 
                     value={entrada} 
                     onChange={(e)=>{setEntrada(e.target.value)}}
                     type="date" 
@@ -107,7 +107,7 @@ export default function Formulario ({huespedes,setHuespedes}) {
                 />
 
                 <label className="flex flex-col text-teal-700 font-semibold">Fecha de Salida: </label>
-                <input className="rounded border-2 border-teal-600 text-sm font-semibold bg-teal-100 text-teal-600 hover:bg-cyan-100" 
+                <input className="rounded border-2 border-teal-600 text-sm font-semibold bg-amber-50 text-teal-600 hover:bg-yellow-100" 
                     value={salida} 
                     onChange={(e)=>{setSalida(e.target.value)}}
                     type="date" 
@@ -116,7 +116,7 @@ export default function Formulario ({huespedes,setHuespedes}) {
                 />
 
                 <label className="flex flex-col text-teal-700 font-semibold">Dieta: </label>
-                <textarea 
+                <textarea className="bg-amber-50 text-teal-600 hover:bg-yellow-100"
                     value={dieta} 
                     onChange={(e)=>{setDieta(e.target.value)}}
                     type="text" 
@@ -126,7 +126,7 @@ export default function Formulario ({huespedes,setHuespedes}) {
                     cols="30"
                 >Dieta o Alimentos o medicinas</textarea>
 
-                <input className="rounded border-2 text-sm font-semibold bg-violet-50 text-violet-700 hover:bg-violet-100 flex flex-col" 
+                <input className="rounded border-2 border-teal-600 text-sm font-semibold bg-amber-50 text-teal-600 hover:bg-yellow-100 flex flex-col" 
                     type="submit" 
                     value="Guardar Datos"
                 />

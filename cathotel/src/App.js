@@ -19,7 +19,7 @@ function App() {
         setHuespedes={setHuespedes}
         />
 
-        <VisorDeHuespedes className='md:-1/2 lg:w-2/5 md:h-screen overflow-y-scroll'
+        <VisorDeHuespedes className='md:-1/2 lg:w-3/5 md:h-screen overflow-y-scroll'
         huespedes={huespedes}/>
 
       </div>

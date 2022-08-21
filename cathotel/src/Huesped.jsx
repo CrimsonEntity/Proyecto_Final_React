@@ -2,7 +2,7 @@ import React from 'react'
 
 function Huesped({dueño, mascota, animal, email, tel, entrada, salida, dieta}) {
   return (
-    <div className="container mx-5 my-10 px-5 py-5 bg-zinc-100 shadow-lg rounded text-base drop-shadow-lg m-8">
+    <div className="container mx-5 my-10 px-5 py-5 bg-orange-200/75 shadow-lg rounded text-base drop-shadow-lg m-8">
         <p className='text-teal-700 font-semibold'>Nombre del dueño: <span className='text-black font-normal'>{dueño}</span></p>
         <p className='text-teal-700 font-semibold'>Nombre de la mascota: <span className='text-black font-normal'>{mascota}</span></p>
         <p className='text-teal-700 font-semibold'>Tipo de Animal: <span className='text-black font-normal'>{animal}</span></p>

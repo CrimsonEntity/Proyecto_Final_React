@@ -5,7 +5,7 @@ import Huesped from "./Huesped";
 function VisorDeHuespedes ({huespedes}) {
     return (
         <div className="ml-4">
-            <h2 className="container mx-5 my-10 h-24 bg-zinc-100 shadow-lg rounded text-center text-teal-700 font-bold>">Lista de Huespedes</h2>
+            <h2 className="container mx-5 my-10 h-24 bg-orange-300/50 shadow-lg rounded text-center text-teal-700 font-bold>">Lista de Huespedes</h2>
             {
                 huespedes.map((huesped)=>{
                     return <Huesped
